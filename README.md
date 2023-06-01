@@ -1,3 +1,12 @@
+#Clone it
+
+@First command 
+#  git clone https://github.com/JavaHunk2020/angular2023.git
+#  cd go inside project
+#  npm install
+#  ng serve
+########################################################
+
 # LoginPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
