@@ -5,9 +5,44 @@
    <br/><br/>
    <h1>WELCOME TO HOME PAGE</h1>
     <br/>
-    <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" style="height: 180px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" style="height: 100px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" style="height: 100px;">
    
     
      <hr/>
-    {{signups | json}}
+   
+
+    <h2>Signups!!!!!!!!!!!!!</h2>  
+    <a [routerLink]="'/signup'">
+       <button type="button" class="btn btn-primary">Add Signup</button>          
+   </a>
+    <br/> <br/>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>Image</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let signup of signups">
+        <td>{{signup.username}}</td>
+        <td>{{signup.email}}</td>
+        <td>{{signup.mobile}}</td>
+        <td>{{signup.gender}}</td>
+        <td>
+              <img src="{{signup.image}}" style="height: 100px;">
+
+        </td>
+        <td>
+            <button type="button" class="btn btn-danger">DELETE</button>                  
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>
 </div>
